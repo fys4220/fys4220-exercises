@@ -11,6 +11,7 @@ Exercise description: https://fys4220.github.io/part-exercises/exercises_your_fi
 To create the project run the *create_quartus_project.tcl* script from the *quartus* folder.
 
 ```
+mkdir quartus
 cd quartus
 quartus_sh -t ../script/create_quartus_project_tcl
 ```
