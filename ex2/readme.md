@@ -16,9 +16,7 @@ Exercise description: https://fys4220.github.io/part-exercises/exercises_adder.h
 To compile and run the simulation open Modelsim/Questasim and run the *compile_and_run.do_half_adder.do* from with in the *sim* folder.
 
 ```
-mkdir sim
-cd sim
-do ../scripts/compile_and_run_half_adder.do
+do compile_and_run_half_adder.do
 ```
 
 If the simulation is run using Questasim, adding the argument *-voptarg=+acc*  will keep Questasim from optimizing which signals and ports that will be available to be visualized in the wave diagram. This optimization can help to speed up the simulation, since the value of all internal signals will not be stored for debugging. However, the simulations performed here are not very complex and simulation time is not an issue. If you are using the Modelsim starter edition this argument is ignore, and all ports and signals are visible by default. 
@@ -30,9 +28,7 @@ If the simulation is run using Questasim, adding the argument *-voptarg=+acc*  w
 To compile and synthesize the half adder run the following commands from the quartus folder.
 
 ```
-mkdir quartus
-cd quartus
-quartus_sh -t ../create_quartus_project_half_adder.tcl
+quartus_sh -t create_quartus_project_half_adder.tcl
 quartus_sh --flow compile half_adder
 ```
 
@@ -55,9 +51,7 @@ quartus_pgm -m jtag -o "p;output_files/half_adder.sof"
 To compile and run the simulation open Modelsim/Questasim and run the *compile_and_run.do_full_adder.do* from with in the *sim* folder.
 
 ```
-mkdir sim
-cd sim
-do ../scripts/compile_and_run_full_adder.do
+do compile_and_run_full_adder.do
 ```
 
 ### Synthesis in Quartus
@@ -65,9 +59,7 @@ do ../scripts/compile_and_run_full_adder.do
 To compile and synthesize the half adder run the following commands from the quartus folder.
 
 ```
-mkdir quartus
-cd quartus
-quartus_sh -t ../create_quartus_project_full_adder.tcl
+quartus_sh -t create_quartus_project_full_adder.tcl
 quartus_sh --flow compile full_adder
 ```
 
@@ -91,9 +83,7 @@ quartus_pgm -m jtag -o "p;output_files/full_adder.sof"
 To compile and run the simulation open Modelsim/Questasim and run the *compile_and_run.do_adder_4bit.do* from with in the *sim* folder.
 
 ```
-mkdir sim
-cd sim
-do ../scripts/compile_and_run_adder_4bit.do
+do compile_and_run_adder_4bit.do
 ```
 
 ### Synthesis in Quartus
@@ -101,9 +91,7 @@ do ../scripts/compile_and_run_adder_4bit.do
 To compile and synthesize the half adder run the following commands from the quartus folder.
 
 ```
-mkdir quartus
-cd quartus
-quartus_sh -t ../create_quartus_project_adder_4bit.tcl
+quartus_sh -t create_quartus_project_adder_4bit.tcl
 quartus_sh --flow compile adder_4bit
 ```
 
@@ -126,9 +114,7 @@ quartus_pgm -m jtag -o "p;output_files/adder_4bit.sof"
 To compile and run the simulation open Modelsim/Questasim and run the *compile_and_run.do_half_adder.do* from with in the *sim* folder.
 
 ```
-mkdir sim
-cd sim
-do ../scripts/compile_and_run_adder_nbit.do
+do compile_and_run_adder_nbit.do
 ```
 
 ### Synthesis in Quartus
@@ -136,9 +122,7 @@ do ../scripts/compile_and_run_adder_nbit.do
 To compile and synthesize the half adder run the following commands from the quartus folder.
 
 ```
-mkdir quartus
-cd quartus
-quartus_sh -t ../create_quartus_project_adder_nbit.tcl
+quartus_sh -t create_quartus_project_adder_nbit.tcl
 quartus_sh --flow compile adder_nbit
 ```
 
