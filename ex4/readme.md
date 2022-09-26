@@ -1,5 +1,5 @@
 
-# EX4: 4-bit up-counter
+# EX4: State machine
 
 This is the solution example for EX4 in FYS4220.
 
