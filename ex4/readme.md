@@ -27,5 +27,5 @@ Expect to see the following output in the Modelsim transcript window and the wav
 #    Time: 370 ns  Iteration: 2  Instance: /tx_fsm_tb
 ```
 
-![Image of wave diagram](doc/exercises_state_machine_wave_diagram.png)
+![Image of wave diagram](doc/exercise_state_machine_wave_diagram.png)
 
