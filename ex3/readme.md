@@ -1,4 +1,4 @@
-# EX2: 4-bit up-counter
+# EX3: 4-bit up-counter
 
 This is the solution example for EX3 in FYS4220.
 
