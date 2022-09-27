@@ -26,6 +26,8 @@ begin
         begin
                 if areset_n = '0' then
                         state <= sIDLE;
+                        tx_enable <= '0';
+                        tx_busy <= '0';
                 elsif rising_edge(clk) then
                         tx_enable <= '0';
                         tx_busy <= '0';
@@ -44,6 +46,7 @@ begin
                                         state <= sIDLE;
                         end case;
                 end if;
+
         end process;
 
 end architecture;
